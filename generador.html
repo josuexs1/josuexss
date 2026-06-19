@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" id="modelo" placeholder="Modelo">
+    <button id="btn">Generar</button>
+    <div id="resultado"></div>
+
+    <script>
+        document.getElementById('btn').onclick = async () => {
+            const dispositivo = document.getElementById('modelo').value;
+            const res = document.getElementById('resultado');
+            const KEY = "AIzaSyCM7H7KeeVHAtTQSEVm3LqBUA0wk90Ph00"; // REEMPLAZA POR UNA CLAVE NUEVA
+            
+            // Usamos la versión v1beta, que suele aceptar modelos antiguos
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro:generateContent?key=${KEY}`;
+
+            res.textContent = "Probando conexión directa...";
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: `Dame la sensibilidad para ${dispositivo}` }] }]
+                    })
+                });
+                const data = await response.json();
+                res.textContent = data.candidates[0].content.parts[0].text;
+            } catch (err) {
+                res.textContent = "Error: " + err.message;
+            }
+        };
+    </script>
+</body>
+</html>

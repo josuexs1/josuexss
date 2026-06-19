@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps - JOSUEXS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAV BAR PREMIUM CLONADA DE FAQ (image_eaa74a.png) -->
+    <div class="nav-container-wrapper" id="dynamicMenu">
+        <nav class="nav-bar-glass">
+            <div class="nav-logo-area">
+                <span class="nav-logo-x">X</span>
+                <span class="nav-logo-text">JOSUEXS</span>
+            </div>
+            
+            <ul class="nav-links-glass">
+                <li><a href="index.html#brevent">Brevent</a></li>
+                <!-- Pasamos el subrayado/tachado activo aquí -->
+                <li><a href="apps.html" class="active-link">Apps</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="index.html#config">Configuraciones</a></li>
+            </ul>
+            
+            <div class="nav-search-glass">
+                <input type="text" id="appsSearchInput" placeholder="Buscar...">
+                <button type="button" class="search-btn">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.5 6.5C11.5 9.26142 9.26142 11.5 6.5 11.5C3.73858 11.5 1.5 9.26142 1.5 6.5C1.5 3.73858 3.73858 1.5 6.5 1.5C9.26142 1.5 11.5 3.73858 11.5 6.5Z" stroke="#aaaaaa" stroke-width="2"/>
+                        <path d="M10 10L14.5 14.5" stroke="#aaaaaa" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- CONTENEDOR DE LA GRILLA (ESTILO SECCIONES DE HERRAMIENTAS) -->
+    <main class="container">
+        <section class="section-block">
+            <h2 class="section-title">Centro de Software:</h2>
+            
+            <div class="apps-media-grid" id="appsContainer">
+                <!-- JavaScript inyectará las tarjetas estructuradas aquí -->
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER PREMIUM IDÉNTICO (image_1d0a83.png) -->
+    <footer class="site-footer">
+        <div class="footer-social-section">
+            <h3 class="social-title">SÍGUENOS</h3>
+            <div class="social-icons-grid">
+                <a href="#" class="social-box" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.8z"/></svg>
+                </a>
+                <a href="#" class="social-box" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                </a>
+                <a href="#" class="social-box" aria-label="YouTube">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+                <a href="#" class="social-box" aria-label="WhatsApp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.717-1.454L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.413 9.863-9.85.001-2.636-1.023-5.11-2.884-6.973C16.53 1.918 14.06 .893 11.43 .893c-5.44 0-9.863 4.414-9.866 9.851-.001 1.77.463 3.491 1.345 5.011l-.995 3.634 3.733-.985zM17.7 14.77c-.3-.15-1.774-.874-2.048-.974-.274-.1-.474-.15-.674.15-.2.3-.774.974-.949 1.174-.175.2-.35.225-.65.075-1.022-.512-1.748-.918-2.434-2.097-.17-.295-.03-.454.12-.603.136-.133.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525C11.5 10.194 10.95 8.82 10.725 8.27c-.22-.53-.445-.457-.61-.465l-.525-.01c-.175 0-.475.067-.725.342-.25.275-.95.928-.95 2.264 0 1.335.975 2.626 1.11 2.812.135.185 1.92 2.931 4.65 4.114.65.28 1.157.447 1.553.573.654.207 1.25.178 1.72.108.524-.078 1.774-.725 2.024-1.425.25-.7.25-1.3 0-1.425-.075-.125-.275-.2-.575-.35z"/></svg>
+                </a>
+                <a href="#" class="social-box" aria-label="TikTok">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.01 1.62 4.14.94.99 2.26 1.58 3.62 1.66v3.82c-1.38-.02-2.74-.45-3.89-1.22-.39-.26-.75-.56-1.07-.9v6.52c.07 1.81-.5 3.59-1.59 4.99-1.29 1.54-3.23 2.42-5.24 2.43-1.63.04-3.24-.44-4.55-1.41-1.67-1.21-2.61-3.19-2.52-5.26.11-2.31 1.48-4.38 3.58-5.32.96-.42 2.01-.62 3.06-.58v3.86c-.66-.08-1.33.09-1.89.47-.84.53-1.31 1.47-1.24 2.47.05.99.64 1.86 1.51 2.28.69.34 1.48.35 2.18.04.86-.41 1.39-1.3 1.35-2.26V0h.01z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+            <div class="footer-col text-left">
+                <h3>LEGAL</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+            <div class="footer-col text-right">
+                <h3>SITIO</h3>
+                <ul>
+                    <li><a href="index.html">Conócenos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CONTROLADORES SCRIPT UNIFICADOS -->
+    <script src="apps-render.js"></script>
+    <script>
+        // 1. Animación del menú flotante al hacer scroll
+        const menuWrapper = document.getElementById('dynamicMenu');
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > 80) {
+                menuWrapper.classList.add('floating-bottom');
+            } else {
+                menuWrapper.classList.remove('floating-bottom');
+            }
+        });
+
+        // 2. Buscador en tiempo real que filtra las aplicaciones de la grilla
+        const searchInput = document.getElementById('appsSearchInput');
+        
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            const appCards = document.querySelectorAll('.app-media-card');
+
+            appCards.forEach(card => {
+                const titleText = card.querySelector('.card-meta-title').textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                const descriptionText = card.querySelector('.card-meta-description').textContent.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                
+                if (titleText.includes(searchTerm) || descriptionText.includes(searchTerm)) {
+                    card.style.display = "flex";
+                    setTimeout(() => { card.style.opacity = "1"; }, 10);
+                } else {
+                    card.style.opacity = "0";
+                    setTimeout(() => { card.style.display = "none"; }, 200);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
